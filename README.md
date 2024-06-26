@@ -1,4 +1,4 @@
-![LOGO]('https://github.com/M-Amin-A/vector_processor/Miscellaneous/cpu.jpg')
+![LOGO]('https://github.com/M-Amin-A/vector_processor/blob/main/Miscellaneous/cpu.jpg')
 
 # Vector Processor
 This project is a vector processor with a 16kb memory, four vector registers and following abilities:
@@ -21,7 +21,7 @@ CPU: Connecting preceding main parts
 
 ## How to Use
 You can write your custom program using available instructions with following ISA:
-![ISA]('https://github.com/M-Amin-A/vector_processor/Miscellaneous/ISA.jpg')
+![ISA]('https://github.com/M-Amin-A/vector_processor/blob/main/Miscellaneous/ISA.jpg')
 
 Architecture Description:
 Word: This architecture supports 4-byte words.
