@@ -22,8 +22,8 @@ CPU: Connecting preceding main parts
 
 ## Testing Method
 For each test, many numbers have been generated randomly and been placed in memory. Then, We have calculated the results in two ways: <br/>
-First, using the implemented CPU
-Second, using Verilog high level programming
+First, using the implemented CPU <br/>
+Second, using Verilog high level programming <br/>
 At last, these results have been compared and if the CPU results had been correct, it would have passed that test.
 
 
