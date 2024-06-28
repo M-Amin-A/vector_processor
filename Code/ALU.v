@@ -1,19 +1,18 @@
-module ALU #(
-    parameter n=512
-)(
+module ALU(
     input opcode,
-    input wire [n-1:0] input_data1, input_data2,
-    output wire [n-1:0] output_data1, output_data2
+    input [511:0] in1, in2,
+    output [511:0] out1, out2
 );
 
     genvar i;
     generate
         for (i = 0; i < 16; i = i + 1) begin
-            assign {output_data2[32*i +: 32], output_data1[32*i +: 32]}
-             = opcode ?
-              $signed(input_data1[32*i +: 32]) + $signed(input_data2[32*i +: 32])
-            : $signed(input_data1[32*i +: 32]) * $signed(input_data2[32*i +: 32]);
+            assign {out2[32 * i +: 32], out1[32 * i +: 32]} = opcode == 0 ? 
+            $signed(in1[32 * i +: 32]) + $signed(in2[32 * i +: 32])
+            : $signed(in1[32 * i +: 32]) * $signed(in2[32 * i +: 32]);
         end
     endgenerate
 
 endmodule
+
+

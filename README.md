@@ -19,6 +19,14 @@ Register File: Containing four 512-bit registers
 Memory Unit: With a size of 2kB
 CPU: Connecting preceding main parts
 
+
+## Testing Method
+For each test, many numbers have been generated randomly and been placed in memory. Then, We have calculated the results in two ways: <br/>
+First, using the implemented CPU
+Second, using Verilog high level programming
+At last, these results have been compared and if the CPU results had been correct, it would have passed that test.
+
+
 ## How to Use
 You can write your custom program using available instructions with following ISA:
 ![ISA]('https://github.com/M-Amin-A/vector_processor/blob/main/Miscellaneous/ISA.jpg?raw=true')
